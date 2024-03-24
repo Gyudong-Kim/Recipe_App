@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_app/components/recipe_menu.dart';
 import 'package:recipe_app/components/recipe_title.dart';
 
 class RecipePage extends StatelessWidget {
@@ -11,6 +12,7 @@ class RecipePage extends StatelessWidget {
         body: const Column(
           children: [
             RecipeTitle(),
+            RecipeMenu(),
           ],
         ));
   }
