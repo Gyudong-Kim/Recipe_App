@@ -21,6 +21,6 @@ flutter:
   assets:
     - assets/images/
   fonts:
-    - family: PauaOne
+    - family: PatuaOne
       fonts:
-        - asset: assets/fonts/PauaOne-Regular.ttf
+        - asset: assets/fonts/PatuaOne-Regular.ttf
