@@ -10,11 +10,15 @@ class RecipePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: _recipeAppBar(),
-        body: const Column(
-          children: [
-            RecipeTitle(),
-            RecipeMenu(),
-          ],
+        body: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              RecipeTitle(),
+              RecipeMenu(),
+            ],
+          ),
         ));
   }
 }

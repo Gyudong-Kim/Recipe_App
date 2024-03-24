@@ -5,8 +5,7 @@ class RecipeMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        margin: const EdgeInsets.only(left: 20),
+    return Padding(
         padding: const EdgeInsets.only(top: 20),
         child: Row(
           children: [
