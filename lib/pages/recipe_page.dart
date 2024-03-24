@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:recipe_app/components/recipe_list_item.dart';
 import 'package:recipe_app/components/recipe_menu.dart';
 import 'package:recipe_app/components/recipe_title.dart';
 
@@ -10,13 +10,15 @@ class RecipePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: _recipeAppBar(),
-        body: const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: ListView(
+            children: const [
               RecipeTitle(),
               RecipeMenu(),
+              RecipeListItem(title: 'Coffee', image: 'coffee'),
+              RecipeListItem(title: 'Burger', image: 'burger'),
+              RecipeListItem(title: 'Pizza', image: 'pizza'),
             ],
           ),
         ));
